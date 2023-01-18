@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }  
+
+body {
+    font-family: "Raleway";
+    overflow: hidden;
+    font-weight: bold;
+
+}
+
+h2 {
+    position: relative;
+    top: 5%;
+    left: 4%;
+    font-family: "Merriweather";
+    font-size: 3rem;
+}
+
+/* =====nav section======== */
+
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:hidden;
+    height: 30%;
+
+}
+
+.profile img {
+    display: flex;
+    align-items: center;
+    height: 60%;
+    overflow:hidden;
+    border-radius: 50%;
+    border: 4px solid rgb(128, 118, 118);
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+.profile h3 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    font-size: 25px;
+    padding-right: 8px;
+    padding-top: 5px;
+    color: #E0FFFF;
+    margin-top: 10%;
+    margin-left: 8%;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 15%; 
+    float: left;
+    height: 100%; 
+    position: fixed; 
+    background-color: black;    
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.nav-menu a ,
+.nav-menu a:focus {
+  text-decoration: none;
+  font-size: 15px;
+  padding-right: 8px;
+  padding-top: 5px;
+  color: #6f7180;
+  margin-top: 10%;
+  margin-left: 5%;
+  overflow: hidden;
+}
+
+
+.nav-menu a:hover {
+  color: #fff;
+} 
+
+#homeLink::before {
+    content: "\f015";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 0.5em;
+}
+
+#aboutMeLink::before {
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 0.5em;
+}
+
+#educationLink::before {
+    content: "\f19d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 0.5em;
+}
+
+#employmentLink::before {
+    content: "\f0b1";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 0.5em;
+}
+
+#hobbiesLink::before {
+    content: "\f004";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 0.5em;
+}
+
+#contactLink::before {
+    content: "\f0e0";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 0.5em;
+}
+
+/* =====content section======== */
+
+/* Divs on the right side */
+.content {
+    float: right;
+    width: 85%; 
+    height: 100%; /* Fill the entire height */
+    /* overflow: auto; Enable scrolling if the content exceeds the height */
+}
+
+.content-child {
+    width: 100%; /* Fill the entire width */
+    height: 100vh; /* 100% of the viewport height */
+    background-color: whitesmoke;
+}
+
+
+.content-child:nth-child(2n + 1) {
+    background-color: rgb(247, 237, 237);
+}
+
+
+#landingPage {
+    background: url("images/keyboard.jfif") top center;
+    background-size: cover;
+}
+
+#landingPage p {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-family: "Merriweather";
+    color: rgba(255, 255, 255, 0.849);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* =====about me section======== */
+
+#aboutMe p {
+   position: relative;
+   top: 15%;
+   left: 4%;
+   margin-top: 4%;
+   font-size: 1.5rem;
+
+}
+
+/* =====education section======== */
+
+#education p {
+    position: relative;
+    top: 15%;
+    left: 4%;
+    margin-top: 4%;
+    font-size: 1.5rem;
+ 
+ }
+
+ /* =====employment section======== */
+
+#employment p {
+    position: relative;
+    top: 15%;
+    left: 4%;
+    margin-top: 4%;
+    font-size: 1.5rem;
+ 
+ }
+
+
+/* =====hobbies section======== */
+
+#hobbies-title {
+    position: relative;
+    left: -40%;
+    top: 6%;
+}
+
+#hobbies div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 1%;
+    font-family: 'Merriweather';
+}
+
+#hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hobbies p {
+    font-size: 2rem;
+}
+
+
+.frame {
+    width: 50%;
+    height: 80%;
+    border-radius: 5%;
+    border-style: double;
+    border-color: #979bbd;
+    box-shadow: 10px 10px 10px gray;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  #slideshow {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: slide 40s infinite;
+  }
+  
+
+
+
+/* =====contact section======== */
+
+
+.contactTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2%;
+}
+
+.detailsSide {
+    display: flex;
+    justify-content: space-between;
+    width: 7%;
+    height: 60%;
+    margin-top: 0;
+    margin-left: 3%;
+    padding-top: 1em;
+}
+
+.detailsSide a {
+    padding-left: 20px;
+}
+
+
+.myForm {
+    position: relative;
+    left: 10%;
+    width: 50%;
+    margin: 2%;
+    margin-bottom: 100px;
+    padding: 1em;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 1px 1px 10px gray;
+}
+
+.submit div {
+    height: 20%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.myForm label {
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+.user-details div {
+    height: 10%;
+}
+
+.contact-form-details {
+    height: 80%;
+    width: 50%
+}
+
+.myForm input {
+    width: 95%;
+    height: 30%;
+    border-radius: 0.5em;
+}
+
+.myForm textarea {
+    width: 95%;
+    height: 100%;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+}
+
+.myForm button[type="submit"] {
+    position: relative;
+    background-color: #0077C9;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.myForm button[type="submit"]:hover {
+    position: relative;
+    background-color: #005580;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    height: 10%;
+    width: 100%;
+}
+
+/* ==== media and keyframes ==== */
+
+@keyframes slide {
+    0% {
+        background-image: url("images/hobbies/view1.jpeg");
+        background-size: cover;
+    }
+    25% {
+        background-image: url("images/hobbies/view3.jpeg");
+        background-size: cover;
+    }
+    50% {
+        background-image: url("images/hobbies/view4.jpeg");
+        background-size: cover;
+    }
+    75% {
+        background-image: url("images/hobbies/guitar.jpg");
+        background-size: cover;
+    }
+    100% {
+        background-image: url("images/hobbies/MJ.jfif");
+        background-size: cover;
+    }
+  }
+
+
+  
+
+
+
+

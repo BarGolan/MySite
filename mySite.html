@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Bar Golan </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mySite.css">
+    <link href="normalize.css" rel="stylesheet">
+    <script src="mySite.js" defer></script>
+    <!-- fonts and icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Sofia|Merriweather" rel="stylesheet">
+
+</head>
+
+<body>
+        
+    <nav id="navBar" class="nav-menu">
+        <div class = "profile">
+            <h3 class="text-light">Bar Golan<a href="index.html"></a></h3>
+            <img src="images/profilePic.png" alt="" class="img-fluid rounded-circle">
+        </div>
+        <a id="homeLink" href="#landingPage">Home</a>
+        <a id="aboutMeLink" href="#aboutMe">About me</a>
+        <a id="educationLink" href="#education">Education</a>
+        <a id="employmentLink" href="#employment">Employment</a>
+        <a id="hobbiesLink" href="#hobbies">Hobbies</a>
+        <a id="contactLink" href="#contact">Contact</a>
+    </nav>
+    <div id="content" class="content">
+        <div id = "landingPage" class="content-child"></div>
+        <div id = "aboutMe" class="content-child">
+            <h2>About me</h2>
+            <p> My name is Bar</p>
+            <p> I'm 28 years old from Tel-Aviv</p>
+            <p> Feel free to scroll through my website and learn somemore about me ;)</p>
+        </div>
+        <div id = "education" class="content-child">
+            <h2>Education</h2>
+            <p> High-School - Alliance, Tel-Aviv</p>
+            <p> BGU as part of pilot's course</p>
+            <p> BCS - Reichman University</p>
+        </div>
+        <div id = "employment" class="content-child">
+            <h2>Employment</h2>
+            <p> 2013 - 2019 - IDF, served as a UAV operator</p>
+            <p> 2020-2021 - UAV operator instructor and project manager at "Aerodrome"</p>
+            <p> 2023 - Hopefully will start working at Google / Microsoft / Apple </p>
+        </div>
+
+        <div id = "hobbies" class="content-child">
+            <h2 id = "hobbies-title"> Hobbies </h2> 
+            <div class="hobbie-names">
+                <p class="hobbie-names"> Traveling </p>
+                <p class="hobbie-names"> Music </p>
+                <p class="hobbie-names"> BasketBall </p>
+            </div>                 
+            <div class="frame">              
+                <section id="slideshow"></section>
+            </div>                 
+        </div>
+        <div id = "contact" class="content-child">
+            <div class = "contactTitle">
+                <h2>Contact</h2>
+                <div class="detailsSide">
+                    <a id="mail" href='mailto:bargolan1@gmail.com'>
+                        <i class="fa fa-envelope" style="font-size:24px"></i>
+                    </a>
+                    <a id="linkedIn" href='https://www.linkedin.com/in/bar-golan-3a06a31a6/'>
+                        <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+                    </a>
+                </div>     
+            </div>
+
+            <div class="contact-form-details">
+                <div class="form-group">
+                    <form class="myForm" onsubmit="submitForm(event);">
+                        <div class="user-details">
+                            <label for="name">Your Name</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="user-details">
+                            <label for="name">Your Email</label>
+                            <input type="email" name="email" id="userEmail" required>
+                        </div>
+                        <div class="user-details">
+                            <label for="name">Subject</label>
+                            <input type="text" name="subject" id="subject" required>
+                        </div>
+                        <div class="message-details">
+                            <label for="name">Message</label>
+                            <textarea name="message" rows="5" required></textarea>
+                        </div>
+                            <div class="submit">
+                                <button type="submit">Send Message</button>
+                            </div>
+                    </form> 
+                </div>                
+            </div>
+
+    </div>
+</body>
+
+</html>
