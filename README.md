@@ -1,7 +1,6 @@
-Welcome to Bar Golan's website
+Welcome to Bar Golan's website.
 
-to run the website simply click the "mySite.HTML" file
-Code validation is being done using the required attribute in the input tags of the form.
+to run the website simply click the "mySite.HTML" file.
 
 The HTML file has a few references within:
 
@@ -11,4 +10,5 @@ The HTML file has a few references within:
 2. mySite.javascript - the main JavaScript file following this HTML file.
    The writeText function animates the title.
    The submitForm function recives the inputes from the user via the form and sends and alert with approval that the info was recived.
+   The checkWindowSize function and all its accompanying functions following it are related to window resizeing and responsiveness of the webpage.
 3. Different references to fonts and icon.
